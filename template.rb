@@ -10,7 +10,7 @@ git :commit => %Q{-m 'Initial commit'}
 #
 original_gemfile = File.read("Gemfile")
 new_gemfile = original_gemfile.split("\n").select { |line| line =~ /\A\s*[a-z]/ }
-gems_to_remove = ['spring', 'turbolinks', 'jbuilder', 'sdoc']
+gems_to_remove = ['turbolinks', 'jbuilder', 'sdoc']
 new_gemfile = new_gemfile.reject do |line|
   line =~ /gem ['"](#{gems_to_remove.join('|')})['"]/
 end

@@ -2,6 +2,10 @@
 
 This is my template for generating new applications. I try to keep it up to date with the latest things which I often use in an application or which are always useful.
 
+```
+rails new awesomeness -m http://rails.adamcooke.io --skip-spring
+```
+
 ## Features
 
 * Sets up an initial git repository
