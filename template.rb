@@ -21,7 +21,6 @@ File.open("Gemfile", 'w') { |f| f.write(new_gemfile.join("\n"))}
 #
 gem 'haml', '~> 4.0.5'
 gem 'nifty-utils', '~> 1.0.2'
-gem 'nifty-attachments', '~> 1.0.3'
 gem 'nilify_blanks', '~> 1.1.0'
 gem 'authie', '~> 1.0.0'
 gem 'annotate', '~> 2.6.5'
@@ -31,11 +30,6 @@ gem 'dynamic_form'
 gem 'activevalidators'
 gem 'bcrypt', '~> 3.1.7'
 gem 'rails_env_config', '~> 1', :group => :development
-
-#
-# Generate the nifty attachments migration
-#
-generate("nifty:attachments:migration")
 
 #
 # Replace the default template with a HAML one

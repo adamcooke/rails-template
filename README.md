@@ -9,7 +9,7 @@ rails new awesomeness -m http://rails.adamcooke.io --skip-spring
 ## Features
 
 * Sets up an initial git repository
-* Removes some gems which I don't take advantage of from the default Gemfile (including spring, sdoc, turbolinks and jbuilder)
+* Removes some gems which I don't take advantage of from the default Gemfile (including sdoc, turbolinks and jbuilder)
 * Adds a number of gems which I always use
 * Uses HAML rather than ERB (including replacing the default application layout)
 * Uses SCSS rather than CSS
