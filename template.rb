@@ -28,7 +28,7 @@ gem 'kaminari', '~> 0.16.1'
 gem 'chronic', '~> 0.10.2'
 gem 'dynamic_form'
 gem 'bcrypt', '~> 3.1.7'
-gem 'rails_env_config', '~> 1', :group => :development
+gem 'rails_env_config', :group => :development
 
 #
 # Replace the default template with a HAML one
