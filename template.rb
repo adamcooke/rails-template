@@ -20,14 +20,13 @@ File.open("Gemfile", 'w') { |f| f.write(new_gemfile.join("\n"))}
 # Add gems
 #
 gem 'haml', '~> 4.0.5'
-gem 'nifty-utils', '~> 1.0.2'
+gem 'nifty-utils'
 gem 'nilify_blanks', '~> 1.1.0'
-gem 'authie', '~> 1.0.0'
+gem 'authie'
 gem 'annotate', '~> 2.6.5'
 gem 'kaminari', '~> 0.16.1'
 gem 'chronic', '~> 0.10.2'
 gem 'dynamic_form'
-gem 'activevalidators'
 gem 'bcrypt', '~> 3.1.7'
 gem 'rails_env_config', '~> 1', :group => :development
 
