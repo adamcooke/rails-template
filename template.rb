@@ -46,7 +46,7 @@ inside "app/views/layouts" do
     = csrf_meta_tags
   %body
     = flash_display
-    = yield  
+    = yield
 CODE
 end
 
@@ -98,7 +98,7 @@ environment 'config.autoload_paths += %W(#{config.root}/lib)'
 # Add a default environment.yml for configuration
 #
 run "echo 'config/environment.yml' >> .gitignore"
-file "config/environment.yml", "#EXAMPLE_VAR: Hello there!\n"
+file "config/environment.yml", "EXAMPLE_VAR: Hello there!\n"
 
 #
 # Commit before we begin
