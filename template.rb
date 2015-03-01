@@ -44,7 +44,7 @@ inside "app/views/layouts" do
     = stylesheet_link_tag 'application'
     = csrf_meta_tags
   %body
-    = flash_display
+    = display_flash
     = yield
 CODE
 end
