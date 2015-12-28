@@ -97,10 +97,18 @@ environment 'config.autoload_paths += %W(#{config.root}/lib)'
 # Add a default environment.yml for configuration
 #
 run "echo 'config/environment.yml' >> .gitignore"
-file "config/environment.yml", "EXAMPLE_VAR: Hello there!\n"
+file "config/environment.yml", "EXAMPLE_VAR: 'Hello there!'\n"
 
 #
 # Commit before we begin
 #
 git :add => "."
 git :commit => %Q{-m 'Setup application'}
+
+#
+# After bundling commit again
+#
+after_bundle do
+  git :add => "."
+  git :commit => "-m 'Add bundled gems'"
+end
